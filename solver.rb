@@ -1,13 +1,14 @@
 class Solver
   def factorial num
     # return factorial
+    raise "Error! Please enter positive integer." if num<0 
     result = 1
     (1..num).each{|i| result *= i} unless num < 1
     result
   end
 
   def reverse word
-    word.split('').reverse.join('')
+    word.split('').reverse.join('') 
   end
 
   
