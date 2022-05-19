@@ -1,8 +1,8 @@
 class Solver
-  def factorial n
+  def factorial num
     # return factorial
     result = 1
-    (1..n).each{|i| result *= i} unless n < 1
+    (1..num).each{|i| result *= i} unless num < 1
     result
   end
 
@@ -11,11 +11,11 @@ class Solver
   end
 
   
-  def fizzbuzz n
-    f = n % 3 == 0 ? nil : 1 
-    b = n % 5 == 0 ? nil : 1
+  def fizzbuzz num
+    f = num % 3 == 0 ? nil : 1 
+    b = num % 5 == 0 ? nil : 1
     if (f && b) 
-      return n.to_s
+      return num.to_s
     elsif f
       return 'buzz'
     elsif b
